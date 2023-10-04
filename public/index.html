@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/handlebars.js"></script>
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <script src="/javascripts/contactManager.js"></script>
+</head>
+<body>
+  <div class="banner">
+    <h1 class="title">Contact Manager</h1>
+  </div>
+
+  <div class="navbar">
+    <a id="add-contact-link" class="nav-anchor" href="#">Add Contact</a>
+    <a class="nav-anchor" href="#" data-type="show-all">Show All Contacts</a>
+    <form id="search">
+      <input type="text" name="search" placeholder="Search By Name">
+    </form>
+    <form id="tagList">
+      <select id="select-options" name="tagList">
+        <option value="All Tags">All tags</option>
+        <option value="Placeholder 1">Placeholder 1</option>
+        <option value="Placeholder 2">Placeholder 2</option>
+        <option value="Placeholder 3">Placeholder 3</option>
+      </select>
+    </form>
+  </div>
+
+  <div id="add-contact-container" class="hidden">
+    <form action="/api/contacts/" method="post" id="add-contact-form" data-edit="false" novalidate>
+      <h1>Create Contact</h1>
+      <label for="full_name">Full Name:</label>
+      <input type="text" id="full_name" name="full_name"/>
+
+      <div data-error="name" class="error-message visibility-hidden">Name must be non-empty and contain letters e.g., "First Last"</div>
+
+      <label for="email">Email:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email"/>
+
+      <div data-error="email" class="error-message visibility-hidden">Please enter a valid email e.g., foo@bar.com</div>
+
+      <label for="phone_number">Phone number:</label>
+      <input 
+        type="text" 
+        id="phone_number" 
+        name="phone_number" 
+        placeholder="###-###-####"/>
+
+      <div data-error="phone" class="error-message visibility-hidden">Please enter a phone number of the form ###-###-####.</div>
+
+      <label for="tags">Tags:</label>
+      <input type="text" id="tags" name="tags" placeholder="tag1, tag2, etc..."/>
+
+      <input id="form-submit" class="form-button" type="submit"></button>
+      <button id="form-cancel" class="form-button" type="button">Cancel</button>
+    </form>
+  </div>
+
+  <ul id="contact-list" class="hidden"></ul>
+</body>
+
+<script id="template" type="text/x-handlebars">
+  {{#each contacts}}
+  {{> partial}}
+  {{/each}}
+</script>
+
+<script id="partial" type="text/x-handlebars"> 
+  <li>
+    <h2>{{full_name}}</h2>
+    <dl>
+      <dt>Phone:</dt>
+      <dd>{{phone_number}}</dd>
+      <dt>Email:</dt>
+      <dd>{{email}}</dd>
+
+      <dt class="tagContact">Tags:</dt>
+      {{#if tags}}
+        {{#each tags}}
+        <dd class="tagContact"><a href="#">{{this}}</a></dd>
+        {{/each}}
+      {{else}}
+        <dd class="tagContact">No tags</dd>
+      {{/if}}
+    </dl>
+    
+    <div>
+      <button type="button" class="edit-btn" data-id={{id}}>Edit</button>
+      <button type="button" class="delete-btn" data-id={{id}}>Delete</button>
+    </div>
+  </li>
+</script>
+
+</html>
+
+
+
