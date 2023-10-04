@@ -10,14 +10,70 @@
     "id": 2,
     "full_name": "Victor Reyes",
     "email": "vpr@example.com",
-    "phone_number": "9876543210",
+    "phone_number": "09876543210",
     "tags": "work,friend"
   },
   {
     "id": 3,
     "full_name": "Pete Hanson",
     "email": "ph@example.com",
-    "phone_number": "4321098761",
+    "phone_number": "54321098761",
     "tags": null
+  },
+  {
+    "full_name": "Roger Foobar",
+    "phone_number": "434-333-4542",
+    "email": "acai367@hotmail.com",
+    "tags": "werqwer, fadw",
+    "id": 4
+  },
+  {
+    "full_name": "Fida Naveed",
+    "phone_number": "434-333-4542",
+    "email": "nf@example.com",
+    "tags": "work, friend",
+    "id": 5
+  },
+  {
+    "full_name": "Bob Foo",
+    "phone_number": "434-333-4542",
+    "email": "acai367@gmail.com",
+    "tags": "work, friend",
+    "id": 6
+  },
+  {
+    "full_name": "AYC BAZ",
+    "phone_number": "434-333-4542",
+    "email": "aycai@hsph.harvard.edu",
+    "tags": "fri, friend",
+    "id": 7
+  },
+  {
+    "full_name": "Nemo Fish",
+    "phone_number": "789-123-4444",
+    "email": "nemo@nemo.com",
+    "tags": "Fish, School",
+    "id": 8
+  },
+  {
+    "full_name": "Naveed Fida",
+    "phone_number": "434-333-4542",
+    "email": "acai367@hotmail.com",
+    "tags": "work, friend",
+    "id": 9
+  },
+  {
+    "full_name": "rewrqwe",
+    "phone_number": "434-333-4542",
+    "email": "acai367@gmail.com",
+    "tags": "",
+    "id": 10
+  },
+  {
+    "full_name": "rewrqwe",
+    "phone_number": "434-333-4542",
+    "email": "acai367@gmail.com",
+    "tags": "work, friend",
+    "id": 11
   }
 ]

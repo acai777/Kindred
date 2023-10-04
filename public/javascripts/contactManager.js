@@ -218,7 +218,8 @@ class Controller {
     document.getElementById("contact-list").addEventListener('click', this.handleClickContactList.bind(this));
     document.getElementById("select-options").addEventListener('change', this.handleSelectTags.bind(this));
     document.querySelector('.nav-anchor[data-type="show-all"]').addEventListener('click', this.handleShowAllContactLink.bind(this));
-    document.getElementById('search').addEventListener('input', this.handleSearch.bind(this));
+    // document.getElementById('search').addEventListener('input', this.handleSearch.bind(this));
+    document.getElementById('search').addEventListener('input', this.debounce(this.handleSearch.bind(this), 300));
   }
 
   handleSearch(event) {
@@ -227,6 +228,14 @@ class Controller {
     let filteredContacts =  this.model.filterContactsBySearch(str)
     this.view.renderContacts(filteredContacts);
   }
+
+  debounce(func, delay) {
+    let timeout;
+    return (...args) => {
+      if (timeout) { clearTimeout(timeout) }
+      timeout = setTimeout(() => func.apply(null, args), delay);
+    };
+  };
 
   handleShowAllContactLink(event) {
     event.preventDefault();
