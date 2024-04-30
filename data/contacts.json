@@ -8,14 +8,14 @@
   },
   {
     "id": 2,
-    "full_name": "Victor Reyes",
+    "full_name": "Victor Foo",
     "email": "vpr@example.com",
     "phone_number": "09876543210",
     "tags": "work,friend"
   },
   {
     "id": 3,
-    "full_name": "Pete Hanson",
+    "full_name": "Pete Bar",
     "email": "ph@example.com",
     "phone_number": "54321098761",
     "tags": null
@@ -36,44 +36,9 @@
   },
   {
     "full_name": "Bob Foo",
-    "phone_number": "434-333-4542",
+    "phone_number": "555-543-4542",
     "email": "bicycle239@gmail.com",
     "tags": "work, friend",
     "id": 6
-  },
-  {
-    "full_name": "AYC BAZ",
-    "phone_number": "434-333-4542",
-    "email": "random@harvard.edu",
-    "tags": "fri, friend",
-    "id": 7
-  },
-  {
-    "full_name": "Nemo Fish",
-    "phone_number": "789-123-4444",
-    "email": "nemo@nemo.com",
-    "tags": "Fish, School",
-    "id": 8
-  },
-  {
-    "full_name": "Naveed Fida",
-    "phone_number": "434-333-4542",
-    "email": "boop@yahoo.com",
-    "tags": "work, friend",
-    "id": 9
-  },
-  {
-    "full_name": "rewrqwe",
-    "phone_number": "434-333-4542",
-    "email": "foo@gmail.com",
-    "tags": "",
-    "id": 10
-  },
-  {
-    "full_name": "rewrqwe",
-    "phone_number": "434-333-4542",
-    "email": "baz@gmail.com",
-    "tags": "work, friend",
-    "id": 11
   }
 ]

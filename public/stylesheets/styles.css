@@ -11,14 +11,14 @@ body {
 .banner {
   background-color: purple;
   width: 100%;
-  height: 10rem;
+  height: 4rem;
 }
 
 .title {
   color: white;
   font-size: 3rem;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 10px;
   margin-top: 0;
 }
 
@@ -92,6 +92,8 @@ form #form-submit {
   padding: 10px;
   border: 2px solid #8c34b2;
   margin: 1rem;
+  border-radius: 10px;
+  background-color:#d29ee8;
 }
 
 #contact-list label {
@@ -121,4 +123,16 @@ dd {
 
 .visibility-hidden {
   visibility: hidden;
+}
+
+.main-body {
+  padding: 1em;
+  padding-top: 0;
+  padding-left: 7em;
+}
+
+.edit-btn, .delete-btn {
+  color: white;
+  background-color: rgb(155, 53, 199);
+
 }
