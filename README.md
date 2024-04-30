@@ -7,7 +7,7 @@ The focus in building Kindred is front-end DOM manipulation. In particular, ther
 To get started, run the following:
 
 ```
-git clone https://github.com/acai777/Contact-Manager.git
+git clone https://github.com/acai777/Kindred.git
 ```
 
 ```
