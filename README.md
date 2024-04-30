@@ -1,6 +1,8 @@
-# Contact-Manager
+# Kindred
 
-This is my implementation for a simple application to manage contacts. The focus of this project is front-end DOM manipulation. In particular, I added a debouncing feature to the search bar so that contacts are filtered after the user finishes typing. No Front-end frameworks were used. 
+Kindred is a simple application to manage contacts. 
+
+The focus in building Kindred is front-end DOM manipulation. In particular, there is a debouncing feature to the search bar such that contacts are filtered after the user finishes typing. No Front-end frameworks were used. 
 
 To get started, run the following:
 
