@@ -11,6 +11,10 @@ git clone https://github.com/acai777/Kindred.git
 ```
 
 ```
+Now, go to the project root directory i.e., run `cd Kindred`
+```
+
+```
 npm install
 ```
 
