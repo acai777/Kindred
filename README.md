@@ -6,20 +6,10 @@ The focus in building Kindred is frontend DOM manipulation. In particular, there
 
 To get started, run the following:
 
-```
-git clone https://github.com/acai777/Kindred.git
-```
 
-```
-Now, go to the project root directory i.e., run `cd Kindred`
-```
-
-```
-npm install
-```
-
-```
-npm start
-```
+1. Run `git clone https://github.com/acai777/Kindred.git`
+2. Now, go to the project root directory i.e., run `cd Kindred`
+3. Run `npm install`
+4. Run `npm start`
 
 Go to http://localhost:3000/ to view the page. 
